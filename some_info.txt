@@ -1,0 +1,28 @@
+API Deployed:
+
+Service Information                                              
+service: notes-app-api                                           
+stage: prod                                                      
+region: us-east-1                                                
+stack: notes-app-api-prod                                        
+resources: 46                                                    
+api keys:                                                        
+  None                                                           
+endpoints:                                                       
+  POST - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes                                                        
+  GET - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes/{id}                                                    
+  GET - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes                                                         
+  PUT - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes/{id}                                                    
+  DELETE - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes/{id}                                                 
+  POST - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/billing                                                      
+functions:                                                       
+  testrun: notes-app-api-prod-testrun                            
+  create: notes-app-api-prod-create                              
+  get: notes-app-api-prod-get                                    
+  list: notes-app-api-prod-list                                  
+  update: notes-app-api-prod-update                              
+  delete: notes-app-api-prod-delete                              
+  billing: notes-app-api-prod-billing                            
+layers:                                                          
+  None                                                           
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.

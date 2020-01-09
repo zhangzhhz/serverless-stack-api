@@ -1,3 +1,6 @@
+# some notes not to be included in git
+exclude_from_git*
+
 # Logs
 logs
 *.log
