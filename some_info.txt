@@ -1,28 +1,51 @@
 API Deployed:
 
-Service Information                                              
-service: notes-app-api                                           
-stage: prod                                                      
-region: us-east-1                                                
-stack: notes-app-api-prod                                        
-resources: 46                                                    
-api keys:                                                        
-  None                                                           
-endpoints:                                                       
-  POST - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes                                                        
-  GET - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes/{id}                                                    
-  GET - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes                                                         
-  PUT - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes/{id}                                                    
-  DELETE - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/notes/{id}                                                 
-  POST - https://fmqb8ngtv1.execute-api.us-east-1.amazonaws.com/prod/billing                                                      
-functions:                                                       
-  testrun: notes-app-api-prod-testrun                            
-  create: notes-app-api-prod-create                              
-  get: notes-app-api-prod-get                                    
-  list: notes-app-api-prod-list                                  
-  update: notes-app-api-prod-update                              
-  delete: notes-app-api-prod-delete                              
-  billing: notes-app-api-prod-billing                            
-layers:                                                          
-  None                                                           
+$ serverless deploy -r ap-northeast-1 
+Serverless: DOTENV: Loading environment variables from .env:
+Serverless:      - STRIPE_SECRET_KEY
+Serverless: Bundling with Webpack...
+Serverless: Packaging service...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service testrun.zip file to S3 (76.14 KB)...
+Serverless: Uploading service create.zip file to S3 (82.02 KB)...
+Serverless: Uploading service get.zip file to S3 (77.73 KB)...
+Serverless: Uploading service billing.zip file to S3 (147.24 KB)...
+Serverless: Uploading service delete.zip file to S3 (77.54 KB)...
+Serverless: Uploading service update.zip file to S3 (78.23 KB)...
+Serverless: Uploading service list.zip file to S3 (77.75 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+........................................................................................................................
+Serverless: Stack update finished...
+Service Information
+service: notes-app-api
+stage: prod
+region: ap-northeast-1
+stack: notes-app-api-prod
+resources: 46
+api keys:
+  None
+endpoints:
+  POST - https://ty0j06aylh.execute-api.ap-northeast-1.amazonaws.com/prod/notes
+  GET - https://ty0j06aylh.execute-api.ap-northeast-1.amazonaws.com/prod/notes/{id}
+  GET - https://ty0j06aylh.execute-api.ap-northeast-1.amazonaws.com/prod/notes
+  PUT - https://ty0j06aylh.execute-api.ap-northeast-1.amazonaws.com/prod/notes/{id}
+  DELETE - https://ty0j06aylh.execute-api.ap-northeast-1.amazonaws.com/prod/notes/{id}
+  POST - https://ty0j06aylh.execute-api.ap-northeast-1.amazonaws.com/prod/billing
+functions:
+  testrun: notes-app-api-prod-testrun
+  create: notes-app-api-prod-create
+  get: notes-app-api-prod-get
+  list: notes-app-api-prod-list
+  update: notes-app-api-prod-update
+  delete: notes-app-api-prod-delete
+  billing: notes-app-api-prod-billing
+layers:
+  None
 Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
